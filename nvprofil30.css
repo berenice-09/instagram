@@ -1,0 +1,227 @@
+/* ============================================
+   INSTAGRAM PROFIL — Feuille de style externe
+   À importer dans ForumActif
+   ============================================ */
+
+/* Conteneur principal */
+.ig-profil {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #262626;
+  background: #fff;
+}
+
+/* ── EN-TÊTE PROFIL ── */
+.ig-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 24px 0 20px;
+}
+
+/* Photo de profil avec anneau dégradé */
+.ig-avatar-ring {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  padding: 3px;
+  flex-shrink: 0;
+}
+.ig-avatar-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  display: block;
+}
+
+/* Infos à droite de l'avatar */
+.ig-info {
+  flex: 1;
+}
+
+/* Ligne pseudo + boutons */
+.ig-username-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.ig-username {
+  font-size: 18px;
+  font-weight: 400;
+}
+.ig-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ig-btn-follow {
+  background: #0095f6;
+  color: #fff;
+}
+.ig-btn-msg {
+  background: #efefef;
+  color: #262626;
+}
+
+/* Stats publications / abonnés / abonnements */
+.ig-stats {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 10px;
+}
+.ig-stat {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+}
+.ig-stat-n {
+  font-weight: 500;
+}
+.ig-stat-l {
+  color: #737373;
+}
+
+/* Bio */
+.ig-bio {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.ig-bio-name {
+  font-weight: 500;
+  display: block;
+}
+.ig-bio-link {
+  color: #00376b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* ── HIGHLIGHTS ── */
+.ig-highlights {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-top: 1px solid #dbdbdb;
+}
+.ig-highlights::-webkit-scrollbar { display: none; }
+
+.ig-hl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.ig-hl-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1.5px solid #dbdbdb;
+  padding: 2px;
+}
+.ig-hl-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.ig-hl-label {
+  font-size: 11px;
+  color: #262626;
+  text-align: center;
+  max-width: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── ONGLETS ── */
+.ig-tabs {
+  display: flex;
+  border-top: 1px solid #dbdbdb;
+  margin-bottom: 2px;
+}
+.ig-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #737373;
+  border-top: 1.5px solid transparent;
+  margin-top: -1px;
+  cursor: pointer;
+}
+.ig-tab.actif {
+  color: #262626;
+  border-top-color: #262626;
+}
+.ig-tab svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ── GRILLE DE PHOTOS ── */
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+.ig-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* Photo taguée : badge en superposition */
+.ig-thumb-wrap {
+  position: relative;
+}
+.ig-tag-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(0,0,0,.55);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ig-tag-badge svg {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 480px) {
+  .ig-header { gap: 16px; }
+  .ig-avatar-ring { width: 72px; height: 72px; }
+  .ig-username { font-size: 15px; }
+  .ig-stats { gap: 16px; }
+}
