@@ -626,7 +626,7 @@
 .ig-comment-body { padding: 0 10px; }
 .ig-notif-user { font-weight: 600; color: var(--textColorAccent); }
 .ig-notif-time { font-size: 11px; color: var(--contrast); margin-top: 3px; }
-.ig-comment-text { line-height: 1.5; color: var(--textColor); }
+.ig-comment-text { line-height: 1.5; color: var(--textColor); margin-left: 5px; }
 
 /* Bouton Suivre */
 .ig-notif-action-cell { width: 80px; text-align: right; }
