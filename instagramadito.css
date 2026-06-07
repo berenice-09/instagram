@@ -161,7 +161,7 @@
 }
 .ig-post-meta { padding: 0 10px; }
 .ig-post-username { font-size: 13px; font-weight: 600; color: var(--textColorAccent); }
-.ig-post-location { font-size: 11px; color: var(--contrast); margin-top: 1px; }
+.ig-post-location { font-size: 11px; color: var(--contrast); margin-top: -4px; }
 .ig-post-more { font-size: 20px; color: var(--textColor); cursor: pointer; }
 
 .ig-post-img-portrait {
@@ -332,11 +332,11 @@
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 5;
   background: rgba(0,0,0,.3);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-  padding: 6px 10px;
+  padding: 10px 10px;
 }
 .ig-sc-caption-txt {
   font-size: 13px; color: #fff;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center;
 }
 
 .ig-sc-bars {
@@ -710,9 +710,9 @@
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
   background: rgba(0,0,0,.3);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-  padding: 6px 10px;
+  padding: 10px 10px;
 }
 .ig-story-caption-txt {
   font-size: 13px; color: #fff;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center;
 }
