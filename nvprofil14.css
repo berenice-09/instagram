@@ -332,12 +332,11 @@
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 5;
   background: rgba(0,0,0,.3);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-  padding: 10px 10px;
+  padding: 6px 10px;
 }
 .ig-sc-caption-txt {
   font-size: 13px; color: #fff;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  text-align:center;  
 }
 
 .ig-sc-bars {
@@ -623,11 +622,11 @@
 }
 
 /* Texte */
-.ig-notif-body { padding: 0 10px; }
-.ig-comment-body { padding: 0 10px; }
-.ig-notif-user { font-weight: 600; color: var(--textColorAccent); }
+.ig-notif-body { padding: 0 10px; width: 100%; }
+.ig-comment-body { padding: 0 10px; width: 100%; max-width: 260px; }
+.ig-notif-user { font-weight: 600; color: var(--textColorAccent); white-space: nowrap; }
 .ig-notif-time { font-size: 11px; color: var(--contrast); margin-top: 3px; }
-.ig-comment-text { line-height: 1.5; color: var(--textColor); }
+.ig-comment-text { line-height: 1.5; color: var(--textColor); word-break: break-word; }
 
 /* Bouton Suivre */
 .ig-notif-action-cell { width: 80px; text-align: right; }
@@ -638,12 +637,13 @@
 }
 
 /* Miniature photo */
-.ig-notif-thumb-cell { width: 50px; text-align: right; }
+.ig-notif-thumb-cell { width: 50px; text-align: right; vertical-align: middle; }
 .ig-notif-thumb {
   width: 44px; height: 44px;
   background-size: cover; background-position: center;
   background-color: var(--neutralDarker2);
-  border-radius: 4px; display: inline-block;
+  border-radius: 4px; display: block;
+  min-height: 44px;
 }
 
 
@@ -710,10 +710,9 @@
   position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
   background: rgba(0,0,0,.3);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-  padding: 10px 10px;
+  padding: 6px 10px;
 }
 .ig-story-caption-txt {
   font-size: 13px; color: #fff;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  text-align:center;
 }
